@@ -26,9 +26,9 @@ Go to start.spring.io and Create a project with following dependency
    >  There are thre main feature of Spring Data JPA. </br>
    
      * No-Code Repository :- </br>
-       It gives higher abstraction , means the complete implementation is hiden.</br>
+       > It gives higher abstraction , means the complete implementation is hiden.</br>
      * Reduce boilerplate code :- </br>
-       Provide the default implementation of each method by its Repository interface , so we don't need to implement read and write operations.</br>
+       > Provide the default implementation of each method by its Repository interface , so we don't need to implement read and write operations.</br>
      * Generate Query :- </br>
        
      
