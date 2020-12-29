@@ -42,12 +42,31 @@ Go to start.spring.io and Create a project with following dependency
          > It is JPA specific repository defined in Spring Data JPA .</br>
          > It extends both the repository CrudRepository and PaginationAndSortingRepository.
          > It add JPA specific method Like flush().</br>
-       
-     
-  
 3. Sql 
   <br> MySQL JDBC and R2DBC driver.
   
 4. DevTool
  </br>Provides fast application restarts, LiveReload, and configurations for enhanced development experience.
  </br> When we save file then application automatically restart and load the changes , not need to manually restart the server.
+ 
+Project Creation snapsort
+---
+![](image/project%20setup.png)
+
+Dependency Added in pom.xml file snapsort
+---
+![](image/pomfile.png)
+
+Table Structure snapsort
+---
+![](image/UserTable.png)
+![](image/orderTable.png)
+
+Postman Request formate
+---
+> Save Request
+![](image/saveRequest.png)
+
+> Get Request
+![](image/getList.png)
+
