@@ -10,16 +10,20 @@ import org.springframework.transaction.annotation.Transactional;
 import sp.brother.onetomany.userorderrelation.dao.UserDao;
 import sp.brother.onetomany.userorderrelation.entity.UserEntity;
 import sp.brother.onetomany.userorderrelation.model.User;
+import sp.brother.onetomany.userorderrelation.repository.UserRepository;
 
 @Service
 public class UserServiceImpl implements UserService {
 	@Autowired
 	UserDao userDao ;
-
+	@Autowired
+	UserRepository userRepository;
 	@Override
 	@Transactional
 	public int saveOrder(UserEntity userEntity) {
-		return userDao.saveOrder(userEntity);
+		 UserEntity savedRecord = userRepository.save(userEntity);
+		 return savedRecord.getUserId();
+		//return userDao.saveOrder(userEntity);
 	}
 
 	@Override
