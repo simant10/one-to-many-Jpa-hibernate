@@ -30,6 +30,18 @@ Go to start.spring.io and Create a project with following dependency
      * Reduce boilerplate code :- </br>
        > Provide the default implementation of each method by its Repository interface , so we don't need to implement read and write operations.</br>
      * Generate Query :- </br>
+       > Generation of database Query based on the method name . Like filterByProductName() ....</br>
+   > Spring Data JPA provide three repository Interface .</br>
+   
+      * CrudRepository:- </br>
+         > CRUD repository are responsible to perform Create, Read, Update and Delete operation.</br>
+      * PaginationAndSortingRepository :- </br>
+         > This repository allow to retrieve data in pagination fashion .</br>
+         > PaginationAndSortingRepository extends CrudRepository and add method findAll().</br>
+      * JpaRepository :- 
+         > It is JPA specific repository defined in Spring Data JPA .</br>
+         > It extends both the repository CrudRepository and PaginationAndSortingRepository.
+         > It add JPA specific method Like flush().</br>
        
      
   
